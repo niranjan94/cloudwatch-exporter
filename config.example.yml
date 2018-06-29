@@ -1,0 +1,45 @@
+---
+
+aws:
+  region: ap-southeast-1
+
+output:
+  format: csv
+  destination: sample.csv
+
+metrics:
+  fromDate: 2018-04-27 08:50:00
+  toDate: 2018-06-28 23:59:00
+
+  properties:
+   - namespace: AWS/EC2
+     name: CPUUtilization
+     dimensionSelect:
+       InstanceId:
+        - i-abcdefghijklmnopq
+     statistic: Average
+     label: CPU Utilization
+     unit: Percent
+     periodMinutes: 1440
+
+   - namespace: CWAgent
+     name: disk_used_percent
+     dimensions:
+      - InstanceId
+     dimensionSelect:
+       InstanceId:
+        - i-abcdefghijklmnopq
+       path:
+        - /
+       fstype:
+        - ext4
+       device:
+        - xvda1
+       ImageId:
+        - ami-abcdefgh
+       InstanceType:
+        - m4.xlarge
+     statistic: Average
+     label: Disk usage
+     unit: Percent
+     periodMinutes: 1440
