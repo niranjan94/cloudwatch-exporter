@@ -1,7 +1,7 @@
 import * as AWS from 'aws-sdk';
-import { merge, snakeCase } from 'lodash';
+import { merge, pick, snakeCase } from 'lodash';
 import { DataLoader } from './data-loader';
-import { Config } from './interfaces/config';
+import { Config} from './interfaces/config';
 import { OutputFormatter } from './output-formatter';
 
 export class Exporter {
@@ -21,10 +21,18 @@ export class Exporter {
   };
 
   constructor(config: Config) {
-    config.metrics.properties.forEach((property: any, index: number) => {
-      property.label = property.label || property.name;
-      property.id = snakeCase(property.label + '_' + index);
+    config.metrics.properties = config.metrics.properties.map((prop: any, index: number) => {
+      return merge(
+        {},
+        pick(config.metrics, ['unit', 'periodMinutes', 'namespace', 'dimensionSelect', 'statistic']),
+        prop,
+        {
+          id: snakeCase(prop.label + '_' + index),
+          label: prop.label || prop.name
+        }
+      );
     });
+
     merge(this.config, config);
     AWS.config.update(this.config.aws);
   }

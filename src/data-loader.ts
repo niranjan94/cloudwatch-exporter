@@ -87,10 +87,10 @@ export class DataLoader {
         nextDataSet.MetricDataResults.forEach((value: MetricDataResult, index: number) => {
           if (data.MetricDataResults && data.MetricDataResults[index]) {
             if (data.MetricDataResults[index].Values && value.Values) {
-              (data.MetricDataResults[index].Values as DatapointValues).concat(value.Values);
+              data.MetricDataResults[index].Values = (data.MetricDataResults[index].Values as DatapointValues).concat(value.Values);
             }
             if (data.MetricDataResults[index].Timestamps && value.Timestamps) {
-              (data.MetricDataResults[index].Timestamps as Timestamps).concat(value.Timestamps);
+              data.MetricDataResults[index].Timestamps = (data.MetricDataResults[index].Timestamps as Timestamps).concat(value.Timestamps);
             }
           }
         });

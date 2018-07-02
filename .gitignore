@@ -10,3 +10,5 @@ coverage
 package-lock.json
 config.yml
 *.csv
+
+output

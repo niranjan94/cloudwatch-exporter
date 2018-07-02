@@ -10,7 +10,6 @@ export interface Output {
 export interface MetricsProperty {
   readonly namespace: string;
   readonly name: string;
-  readonly dimensions: ReadonlyArray<string>;
   readonly dimensionSelect: {readonly [key: string]: ReadonlyArray<string>}
   readonly statistic: string;
   readonly label: string;
@@ -22,7 +21,13 @@ export interface MetricsProperty {
 export interface Metrics {
   readonly fromDate: string;
   readonly toDate: string;
-  readonly properties: ReadonlyArray<MetricsProperty>
+
+  properties: MetricsProperty[]
+
+  readonly unit?: StandardUnit;
+  readonly periodMinutes?: number;
+  readonly dimensionSelect?: {readonly [key: string]: ReadonlyArray<string>}
+  readonly namespace?: string;
 }
 
 export interface Config {
