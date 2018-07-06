@@ -8,7 +8,9 @@ coverage
 *.log
 
 package-lock.json
+config.*.yml
 config.yml
+!config.example.yml
 *.csv
 
 output
