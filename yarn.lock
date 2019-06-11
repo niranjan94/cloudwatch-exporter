@@ -309,9 +309,9 @@
   dependencies:
     chalk "*"
 
-"@types/cli-table2@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@types/cli-table2/-/cli-table2-0.2.1.tgz#08faf5ce07115b0fd5c73c3dca9e8de3e2cf1d8e"
+"@types/cli-table2@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@types/cli-table2/-/cli-table2-0.2.2.tgz#9e0c2995c24676bbc7bc3bd36e2012464dd77d55"
 
 "@types/events@*":
   version "1.2.0"
