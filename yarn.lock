@@ -1870,9 +1870,9 @@ extsprintf@^1.2.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
 
-fast-csv@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/fast-csv/-/fast-csv-3.1.0.tgz#84f9a100e48b2e165bc2bc384311de46de5e4e42"
+fast-csv@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/fast-csv/-/fast-csv-3.3.0.tgz#f4a8f7f2ee91fd068606d6c5a8a1d70fd60d3f88"
   dependencies:
     "@types/lodash" "^4.14.132"
     "@types/node" "^12.0.2"
@@ -3048,9 +3048,9 @@ lodash@^3.10.1:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.5, lodash@^4.2.1:
-  version "4.17.14"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
+lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.5, lodash@^4.2.1:
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
 
 log-symbols@^2.2.0:
   version "2.2.0"
