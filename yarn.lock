@@ -691,9 +691,9 @@ ava@^2.2.0:
     update-notifier "^3.0.1"
     write-file-atomic "^3.0.0"
 
-aws-sdk@^2.502.0:
-  version "2.502.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.502.0.tgz#b3192f82389db982605462c8394cc3fa8c475b3e"
+aws-sdk@^2.504.0:
+  version "2.504.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.504.0.tgz#d7111b3f5117548935d68c717d72bbf57a9362f9"
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
