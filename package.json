@@ -65,7 +65,7 @@
     "@types/chalk": "^2.2.0",
     "@types/cli-table2": "^0.2.2",
     "@types/js-yaml": "^3.12.1",
-    "@types/lodash": "^4.14.136",
+    "@types/lodash": "^4.14.159",
     "@types/moment": "^2.13.0",
     "ava": "^2.2.0",
     "codecov": "^3.0.2",
