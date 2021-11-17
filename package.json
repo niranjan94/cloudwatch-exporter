@@ -53,22 +53,22 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "aws-sdk": "^2.814.0",
+    "aws-sdk": "^2.1030.0",
     "chalk": "^2.4.1",
     "cli-table2": "^0.2.0",
     "fast-csv": "^3.4.0",
     "js-yaml": "^3.13.1",
-    "lodash": "^4.17.14",
-    "moment": "^2.24.0"
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1"
   },
   "devDependencies": {
     "@types/chalk": "^2.2.0",
-    "@types/cli-table2": "^0.2.2",
+    "@types/cli-table2": "^0.2.3",
     "@types/js-yaml": "^3.12.1",
-    "@types/lodash": "^4.14.136",
+    "@types/lodash": "^4.14.177",
     "@types/moment": "^2.13.0",
     "ava": "^2.2.0",
-    "codecov": "^3.0.2",
+    "codecov": "^3.8.3",
     "cz-conventional-changelog": "^2.1.0",
     "gh-pages": "^2.0.1",
     "npm-run-all": "^4.1.5",
